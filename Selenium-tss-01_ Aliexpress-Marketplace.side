@@ -1,0 +1,663 @@
+{
+  "id": "ed3e916f-a44e-4edd-9d47-90f75b198d1e",
+  "version": "2.0",
+  "name": "Aliexpress-Marketplace",
+  "url": "https://aliexpress.ru",
+  "tests": [{
+    "id": "cf8e4ab6-49e7-4727-9440-3acef7701c2b",
+    "name": "tcs-01-03 - Compare number on Pictogram and amount of products in the Shopping Cart",
+    "commands": [{
+      "id": "493c06a8-d2c7-4fa0-a827-20dbd28eed08",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7651dfee-2267-4c7e-9cb4-bb966a8f1b42",
+      "comment": "",
+      "command": "storeText",
+      "target": "css=.Header_ShopCart__counter__1mrlq",
+      "targets": [],
+      "value": "counter1"
+    }, {
+      "id": "eeb9cfc9-4cc4-4932-a0fa-15fbc9eb7f7f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/form/div/div/input",
+      "targets": [
+        ["id=downshift-456887-input", "id"],
+        ["name=SearchText", "name"],
+        ["css=#downshift-456887-input", "css:finder"],
+        ["xpath=//input[@id='downshift-456887-input']", "xpath:attributes"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b447b3d1-8bcd-4444-a9c9-54d86dcf1a9a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/form/div/div/input",
+      "targets": [
+        ["id=downshift-456887-input", "id"],
+        ["name=SearchText", "name"],
+        ["css=#downshift-456887-input", "css:finder"],
+        ["xpath=//input[@id='downshift-456887-input']", "xpath:attributes"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "tool"
+    }, {
+      "id": "0d463ae8-bdfc-4441-a64e-ebe1cc76f3d3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [
+        ["css=.Header_SearchSection__searchButton__s795p", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e477b230-b52e-4617-9177-9e29c0568719",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SearchMainFilters_ProductFeedView__icon__1i6c3",
+      "targets": [
+        ["css=.SearchMainFilters_ProductFeedView__icon__1i6c3", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c92f22b-a38a-45e9-87e5-72bb816d59e6",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[3]/div/div[2]/div/div[3]/div/div/div/div/a/div/div",
+      "targets": [
+        ["css=.product-snippet_ProductSnippet__grid__tusfnx > .product-snippet_ProductSnippet__container__tusfnx:nth-child(1) .product-snippet_ProductSnippet__name__tusfnx", "css:finder"],
+        ["xpath=//div[@id='__aer_root__']/div/div[3]/div/div[2]/div/div[3]/div/div/div/div/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/a/div/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win3912",
+      "windowTimeout": 2000
+    }, {
+      "id": "af0cd191-083d-45aa-9260-00316d6ab976",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebbf660a-fc96-4552-9c77-60af0787f50c",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win3912}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f28239ae-1406-4f4a-b5b9-daee3fb062a3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='#content']/div[7]/div[2]/button",
+      "targets": [
+        ["css=.ali-kit_Button__warning__18ub7i", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='#content']/div[7]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Добавить в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "55757749-61a8-4800-b58c-32a61fdd25ce",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ali-kit_Dialog__closeBtn__1lirhm > svg",
+      "targets": [
+        ["css=.ali-kit_Dialog__closeBtn__1lirhm > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "8cd250a7-94e8-4ce6-a771-8506c2017ad8",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0068c958-2b50-4ff0-a39c-67fe49c8a991",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "356ca564-49fc-4923-b5b2-501fc7998658",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[3]/div/div[2]/div/div[3]/div/div[2]/div/div/a/div/div",
+      "targets": [
+        ["css=.product-snippet_ProductSnippet__container__tusfnx:nth-child(2) .product-snippet_ProductSnippet__name__tusfnx", "css:finder"],
+        ["xpath=//div[@id='__aer_root__']/div/div[3]/div/div[2]/div/div[3]/div/div[2]/div/div/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/a/div/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2473",
+      "windowTimeout": 2000
+    }, {
+      "id": "bea3d84e-2e6b-47f2-bdc0-af03587a1c7d",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2473}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c706c4cf-aeb1-487d-8b38-836f6c5474ad",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[7]/div[2]/button",
+      "targets": [
+        ["css=.ali-kit_Button__warning__18ub7i", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='#content']/div[7]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Добавить в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "01344dab-9e62-4808-97d2-a71536da9b4a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ali-kit_Dialog__closeBtn__1lirhm path",
+      "targets": [
+        ["css=.ali-kit_Dialog__closeBtn__1lirhm path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "600ee4e5-081d-4ddb-b664-d94a2ba3a8c5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//div[@id='__aer_root__']/div/div/div[3]/div/a[3]",
+      "targets": [
+        ["linkText=Топ продаж", "linkText"],
+        ["css=.ali-kit_Link__default__cmgtoz:nth-child(4)", "css:finder"],
+        ["xpath=//a[contains(text(),'Топ продаж')]", "xpath:link"],
+        ["xpath=//div[@id='__aer_root__']/div/div/div[3]/div/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '//progsir.aliexpress.ru/store/top-rated-products/1101300296.html')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Топ продаж')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "91274f38-c9bd-4623-9078-e611699587dc",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "be13dd61-63e2-4fa5-b4bf-ea2614e42e90",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9761404e-25f7-42d7-8118-b4240a393408",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[3]/div/div[2]/div/div[3]/div/div[3]/div/div/a/div/div",
+      "targets": [
+        ["css=.product-snippet_ProductSnippet__container__tusfnx:nth-child(3) .product-snippet_ProductSnippet__name__tusfnx", "css:finder"],
+        ["xpath=//div[@id='__aer_root__']/div/div[3]/div/div[2]/div/div[3]/div/div[3]/div/div/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/a/div/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win800",
+      "windowTimeout": 2000
+    }, {
+      "id": "c6cf0a06-6f19-4166-8c81-0b63871a3f14",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win800}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec4d4374-bc32-4ce5-ad20-8f1b7b06232f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='#content']/div[7]/div[2]/button",
+      "targets": [
+        ["css=.ali-kit_Button__warning__18ub7i", "css:finder"],
+        ["xpath=(//button[@type='button'])[5]", "xpath:attributes"],
+        ["xpath=//div[@id='#content']/div[7]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[7]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Добавить в корзину')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99f74f1b-1439-4232-8e39-97c211b3928d",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ali-kit_Dialog__closeBtn__1lirhm > svg",
+      "targets": [
+        ["css=.ali-kit_Dialog__closeBtn__1lirhm > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "801ef14f-5068-4964-a2aa-fe7499a03827",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2edb2630-a417-42ed-a328-b60d1fa1c034",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6fd30af1-9d99-47d2-9d06-fec5d9a04625",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div/div[2]/div/div[2]/div/a",
+      "targets": [
+        ["linkText=0", "linkText"],
+        ["css=.SearchHeader_ShopCart__linkImage__6xhho", "css:finder"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div/div[2]/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://shoppingcart.aliexpress.ru/shopcart/shopcartDetail.htm?spm=a2g2w.productlist.1000002.2.1f9d2cb2iwx5n7&_ga=2.181018023.1631926537.1659435329-783932980.1653906199')]", "xpath:href"],
+        ["xpath=//div[2]/div/div[2]/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ed743e2-6258-4f49-bf4f-e8dd56536293",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header_Logo__mainLogo__1gbu2 > path",
+      "targets": [
+        ["css=.Header_Logo__mainLogo__1gbu2 > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "b65433ea-1e6f-477f-8032-68fe51138c09",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.Header_ShopCart__counter__1mrlq",
+      "targets": [
+        ["css=.Header_ShopCart__counter__1mrlq", "css:finder"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'3')]", "xpath:innerText"]
+      ],
+      "value": "3"
+    }, {
+      "id": "557bf279-f7d0-4c3f-84fe-3219cbbac270",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header_ShopCart__counter__1mrlq",
+      "targets": [
+        ["css=.Header_ShopCart__counter__1mrlq", "css:finder"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'3')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1df615c-b842-400b-b9d8-7f6300e7a3fb",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ShoppingcartItemList_ShoppingcartItemList__storeList__tbcus:nth-child(1) .ali-kit_Button__button__18ub7i:nth-child(2) > .ShoppingcartItemList_ControlActionGroup__actionIcon__xpegy:nth-child(1)",
+      "targets": [
+        ["css=.ShoppingcartItemList_ShoppingcartItemList__storeList__tbcus:nth-child(1) .ali-kit_Button__button__18ub7i:nth-child(2) > .ShoppingcartItemList_ControlActionGroup__actionIcon__xpegy:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "020445c3-ae50-47b6-8b33-305c20e5b743",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[18]",
+      "targets": [
+        ["css=.ShoppingcartItemList_ControlActionGroup__btn__xpegy:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[18]", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "da60d1d7-32be-4b07-90c8-a310ff74f89a",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.ShoppingcartItemList_ShoppingcartItemList__storeList__tbcus:nth-child(1) .ali-kit_Button__button__18ub7i:nth-child(2) > .ShoppingcartItemList_ControlActionGroup__actionIcon__xpegy:nth-child(1)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e1af641-c404-4f34-8955-a2458120ec80",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ShoppingcartItemList_ShoppingcartItemList__storeList__tbcus:nth-child(1) .ali-kit_Button__button__18ub7i:nth-child(2) > .ShoppingcartItemList_ControlActionGroup__actionIcon__xpegy:nth-child(1)",
+      "targets": [
+        ["css=.ShoppingcartItemList_ShoppingcartItemList__storeList__tbcus:nth-child(1) .ali-kit_Button__button__18ub7i:nth-child(2) > .ShoppingcartItemList_ControlActionGroup__actionIcon__xpegy:nth-child(1)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "34cb1d74-e8f0-4ee2-961f-fe99899b393c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[13]",
+      "targets": [
+        ["css=.ShoppingcartItemList_ControlActionGroup__btn__xpegy:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[13]", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b2b5d602-3199-4f31-b97e-368990c1ff88",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ali-kit_Button__button__18ub7i:nth-child(2) > .ShoppingcartItemList_ControlActionGroup__actionIcon__xpegy",
+      "targets": [
+        ["css=.ali-kit_Button__button__18ub7i:nth-child(2) > .ShoppingcartItemList_ControlActionGroup__actionIcon__xpegy", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "6a504d70-1847-45ab-95e3-7f6eb24c543c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=(//button[@type='button'])[8]",
+      "targets": [
+        ["css=.ShoppingcartItemList_ControlActionGroup__btn__xpegy:nth-child(1)", "css:finder"],
+        ["xpath=(//button[@type='button'])[8]", "xpath:attributes"],
+        ["xpath=//div[4]/div/div[2]/div[2]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'OK')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b407a76-5bab-4316-831c-6c7c26fd517b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Header_Logo__mainLogo__1gbu2",
+      "targets": [
+        ["css=.Header_Logo__mainLogo__1gbu2", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "fcd4dadf-fb88-44f2-83fd-9a33e1d9fbc2",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.Header_ShopCart__counter__1mrlq",
+      "targets": [
+        ["css=.Header_ShopCart__counter__1mrlq", "css:finder"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/div/a/i", "xpath:idRelative"],
+        ["xpath=//a/i", "xpath:position"],
+        ["xpath=//i[contains(.,'0')]", "xpath:innerText"]
+      ],
+      "value": "0"
+    }]
+  }, {
+    "id": "7b06879b-4dba-4be7-965d-d39740e4848b",
+    "name": "tcs-01-02 - Add and remove Product to / from Wish-List",
+    "commands": [{
+      "id": "eefcd187-fc35-41aa-8490-b47bfc318abf",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a98556f9-8faf-471e-8aaf-3c8dd76f7758",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["id=downshift-503068-input", "id"],
+        ["name=SearchText", "name"],
+        ["css=#downshift-503068-input", "css:finder"],
+        ["xpath=//input[@id='downshift-503068-input']", "xpath:attributes"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "644525b3-88d4-4225-98a7-63aedd978e5a",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["id=downshift-503068-input", "id"],
+        ["name=SearchText", "name"],
+        ["css=#downshift-503068-input", "css:finder"],
+        ["xpath=//input[@id='downshift-503068-input']", "xpath:attributes"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "drill"
+    }, {
+      "id": "90b5b374-f1ca-4cff-91a7-631168d1b24d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[@type='submit']",
+      "targets": [
+        ["css=.Header_SearchSection__searchButton__s795p", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/form/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a474f53e-0d0c-45b2-9672-4eadf04d8258",
+      "comment": "",
+      "command": "click",
+      "target": "css=.SearchMainFilters_ProductFeedView__icon__1i6c3",
+      "targets": [
+        ["css=.SearchMainFilters_ProductFeedView__icon__1i6c3", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "07e02183-3b32-4513-af79-5484d499eaa7",
+      "comment": "",
+      "command": "storeText",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[3]/div/div[2]/div/div[3]/div/div/div/div/a/div/div",
+      "targets": [
+        ["css=.product-snippet_ProductSnippet__grid__tusfnx > .product-snippet_ProductSnippet__container__tusfnx:nth-child(1) .product-snippet_ProductSnippet__name__tusfnx", "css:finder"],
+        ["xpath=//div[@id='__aer_root__']/div/div[3]/div/div[2]/div/div[3]/div/div/div/div/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/a/div/div", "xpath:position"]
+      ],
+      "value": "prod_desc"
+    }, {
+      "id": "23c72716-5d52-4fe5-b920-dc7cbea195e7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[3]/div/div[2]/div/div[3]/div/div/div/div/a/div/div",
+      "targets": [
+        ["css=.product-snippet_ProductSnippet__grid__tusfnx > .product-snippet_ProductSnippet__container__tusfnx:nth-child(1) .product-snippet_ProductSnippet__name__tusfnx", "css:finder"],
+        ["xpath=//div[@id='__aer_root__']/div/div[3]/div/div[2]/div/div[3]/div/div/div/div/a/div/div", "xpath:idRelative"],
+        ["xpath=//div[3]/div/div/div/div/a/div/div", "xpath:position"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win2908",
+      "windowTimeout": 2000
+    }, {
+      "id": "0ba0f599-e732-4df0-91fe-8a967af18dc3",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ccf1e48-1a03-4b18-86cb-c2be98c47f19",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win2908}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a0739995-1862-4987-b629-78e0adc0c25b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.Product_LikeButton__heart__eiubz > path",
+      "targets": [
+        ["css=.Product_LikeButton__heart__eiubz > path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "067c74bc-8cee-42f1-8754-9a4d035dd10a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.ali-kit_Dialog__closeBtn__1lirhm > svg",
+      "targets": [
+        ["css=.ali-kit_Dialog__closeBtn__1lirhm > svg", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "113965b0-3b99-494d-b32e-f279a08725d6",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "235a9866-2efb-4c79-a5a8-6d86db819b4f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "05b77b61-87d5-4798-804d-2ff5919ae356",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__aer_root__']/div/div/div/span/div[4]/div/div/a/span/span",
+      "targets": [
+        ["css=.TopHeadV2_TopHeadV2__wishList__1c1dq > .TopHeadV2_TopHeadV2__textHead__1c1dq", "css:finder"],
+        ["xpath=//div[@id='__aer_root__']/div/div/div/span/div[4]/div/div/a/span/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/a/span/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2bb21efa-a313-4f60-83e0-afa8be8ac0d5",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=//a[contains(text(),'${prod_desc}')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e804be2c-416e-48fc-8452-7f99e2dab2dd",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//a[contains(text(),'${prod_desc}')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ca6a8f74-6773-4abf-a665-5167cefa8a50",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[4]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/a",
+      "targets": [
+        ["linkText=BLMIATKO 350N.m 10 мм 3 в 1 электрическая дрель, отвертка с светодиодный светильник кой, беспроводная ударная дрель для Makita, батарея 18 в", "linkText"],
+        ["css=.Wishlist_Item__wrapper__1xyhr:nth-child(1) .Wishlist_Item__itemTop__1xyhr > div > .ali-kit_Link__link__cmgtoz", "css:finder"],
+        ["xpath=//a[contains(text(),'BLMIATKO 350N.m 10 мм 3 в 1 электрическая дрель, отвертка с светодиодный светильник кой, беспроводная ударная дрель для Makita, батарея 18 в')]", "xpath:link"],
+        ["xpath=//div[@id='__aer_root__']/div/div[4]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://aliexpress.ru/item/1005003657608959.html?_ga=2.244446853.1631926537.1659435329-783932980.1653906199')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'BLMIATKO 350N.m 10 мм 3 в 1 электрическая дрель, отвертка с светодиодный светильник кой, беспроводная ударная дрель для Makita, батарея 18 в')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5641",
+      "windowTimeout": 2000
+    }, {
+      "id": "52bc5346-98b1-41d6-8db8-71764316a5cc",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5641}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "79bda3fc-56ad-45cb-99ec-f09f6621243d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=//*[@id=\"#content\"]/div[1]/h1",
+      "targets": [],
+      "value": "${prod_desc}"
+    }, {
+      "id": "ac0c5d13-5592-4d2d-a781-cd60d87781e4",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "929b88ab-6133-4c61-8ed1-50d6d141c1e1",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[4]/div/div[2]/div/div/div/div/div[2]/div/div/div[2]/div/a",
+      "targets": [
+        ["linkText=Удалить", "linkText"],
+        ["css=.Wishlist_Item__wrapper__1xyhr:nth-child(1) .Wishlist_ActionBlock__delete__1mups", "css:finder"],
+        ["xpath=//a[contains(text(),'Удалить')]", "xpath:link"],
+        ["xpath=//div[@id='__aer_root__']/div/div[4]/div/div[2]/div/div/div/div/div[2]/div/div/div[2]/div/a", "xpath:idRelative"],
+        ["xpath=//div/div/div[2]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Удалить')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44358d75-b1be-412a-a50e-6eb026c0d022",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=//div[@id='__aer_root__']/div/div[4]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/a",
+      "targets": [
+        ["linkText=Роликовый аппарат для ухода за кожей лица, с двумя головками, нефрит для массажа", "linkText"],
+        ["css=.Wishlist_Item__wrapper__1xyhr:nth-child(1) .Wishlist_Item__itemTop__1xyhr > div > .ali-kit_Link__link__cmgtoz", "css:finder"],
+        ["xpath=//a[contains(text(),'Роликовый аппарат для ухода за кожей лица, с двумя головками, нефрит для массажа')]", "xpath:link"],
+        ["xpath=//div[@id='__aer_root__']/div/div[4]/div/div[2]/div/div/div/div/div[2]/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://aliexpress.ru/item/1005001924433835.html?_ga=2.219814297.1631926537.1659435329-783932980.1653906199')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Роликовый аппарат для ухода за кожей лица, с двумя головками, нефрит для массажа')]", "xpath:innerText"]
+      ],
+      "value": "${prod_desc}"
+    }]
+  }, {
+    "id": "763ab215-4717-4781-9de4-74891b899e1b",
+    "name": "tcs-01-01 - Search-Field is Editable",
+    "commands": [{
+      "id": "7163c46f-6cdd-48ee-81df-e4a97584c20d",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91b57bc4-d7b4-4ff3-b1e4-d73eec2b4bf5",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "xpath=//div/input",
+      "targets": [
+        ["id=downshift-297113-input", "id"],
+        ["name=SearchText", "name"],
+        ["css=#downshift-297113-input", "css:finder"],
+        ["xpath=//input[@id='downshift-297113-input']", "xpath:attributes"],
+        ["xpath=//div[@id='__aer_root__']/div/div[2]/div/div/div[2]/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ebcf0ff4-bad0-409e-ade3-13f36ae441f0",
+    "name": "tss_01",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["763ab215-4717-4781-9de4-74891b899e1b", "7b06879b-4dba-4be7-965d-d39740e4848b", "cf8e4ab6-49e7-4727-9440-3acef7701c2b"]
+  }],
+  "urls": ["https://aliexpress.ru/"],
+  "plugins": []
+}
